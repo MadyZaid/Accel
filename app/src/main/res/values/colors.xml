@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Background colors -->
+    <color name="primaryColor">@color/light_blue_600</color>
+    <color name="accentColor">@color/light_blue_100</color>
+
+    <!-- Text colors -->
+    <color name="primary_text_color">#dd000000</color>
+    <color name="secondary_text_color">#89000000</color>
+
+    <!-- Scale -->
+    <color name="red_segments">#ffff6d6d</color>
+    <color name="yellow_segments">#fffbfd63</color>
+    <color name="green_segments">#ff60ff50</color>
+    <color name="primary_labels">#ff05f0ff</color>
+    <color name="minor_labels">#ffa9faff</color>
+    <color name="app_bg">#ff171b22</color>
+
+
+</resources>

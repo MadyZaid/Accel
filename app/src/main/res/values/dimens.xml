@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="amount_text_size">24sp</dimen>
+    <dimen name="units_text_size">15sp</dimen>
+    <dimen name="units_margin_left">5sp</dimen>
+    <dimen name="pointer_top_margin">50dp</dimen>
+    <dimen name="pointer_height">30dp</dimen>
+    <dimen name="pointer_y_position">100dp</dimen>
+    <dimen name="gauge_size">300dp</dimen>
+    <dimen name="amount_container_padding_right">10dp</dimen>
+    <dimen name="amount_container_margin_top">130dp</dimen>
+    <dimen name="amount_container_margin_bottom">5dp</dimen>
+    <dimen name="measurement_top_label_text_size">12sp</dimen>
+    <dimen name="measurement_bottom_label_text_size">14sp</dimen>
+    <dimen name="segment_margin">15dp</dimen>
+    <dimen name="gauge_button_width">105dp</dimen>
+    <dimen name="gauge_button_height">35dp</dimen>
+    <dimen name="gauge_button_bottom_margin">20dp</dimen>
+    <dimen name="gauge_button_left_margin">0dp</dimen>
+    <dimen name="connection_icon_width">18dp</dimen>
+    <dimen name="connection_icon_height">18dp</dimen>
+    <dimen name="connection_icon_left_margin">20dp</dimen>
+    <dimen name="connection_icon_bottom_margin">40dp</dimen>
+</resources>

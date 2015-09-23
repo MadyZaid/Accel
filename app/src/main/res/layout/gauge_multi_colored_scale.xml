@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="@dimen/gauge_size"
+        android:layout_height="@dimen/gauge_size"
+        android:background="@drawable/gauge_segment_bg"
+        android:scaleType="fitXY" />
+
+    <com.nike.accel.ui.widgets.gauges.GradientScale
+        android:id="@+id/iv_scale_bg"
+        android:layout_width="@dimen/gauge_size"
+        android:layout_height="@dimen/gauge_size"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_gauge"
+        android:layout_width="@dimen/gauge_size"
+        android:layout_height="@dimen/gauge_size"
+        android:scaleType="fitXY"
+        android:src="@drawable/multi_color_gauge" />
+
+    <ImageView
+        android:id="@+id/iv_button"
+        android:layout_width="@dimen/gauge_button_width"
+        android:layout_height="@dimen/gauge_button_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/gauge_button" />
+
+    <LinearLayout
+        android:id="@+id/ll_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/amount_container_margin_bottom"
+        android:layout_marginTop="@dimen/amount_container_margin_top"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/amount_container_padding_right">
+
+        <TextView
+            android:id="@+id/tv_7_segment_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/primary_labels"
+            android:textSize="@dimen/amount_text_size" />
+
+        <TextView
+            android:id="@+id/tv_7_segment_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_7_segment_value"
+            android:layout_marginLeft="@dimen/units_margin_left"
+            android:layout_toRightOf="@id/tv_7_segment_value"
+            android:textColor="@color/primary_labels"
+            android:textSize="@dimen/units_text_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_top_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_amount"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/minor_labels"
+        android:textSize="@dimen/measurement_top_label_text_size" />
+
+    <TextView
+        android:id="@+id/tv_bottom_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_top_label"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primary_labels"
+        android:textSize="@dimen/measurement_bottom_label_text_size" />
+
+    <ImageView
+        android:id="@+id/iv_pointer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pointer_height"
+        android:scaleType="fitCenter"
+        android:src="@drawable/gauge_pointer" />
+
+    <ImageView
+        android:id="@+id/iv_connection"
+        android:layout_width="@dimen/connection_icon_width"
+        android:layout_height="@dimen/connection_icon_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/not_connected" />
+
+</RelativeLayout>

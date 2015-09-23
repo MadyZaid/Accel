@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Accelerometer</title>
+    <!-- ### EON -->
+    <script type="text/javascript" src="http://pubnub.github.io/eon/lib/eon.js"></script>
+    <link type="text/css" rel="stylesheet" href="http://pubnub.github.io/eon/lib/eon.css"/>
+    <!-- ### /EON -->
+</head>
+
+<body style="font-family: sans-serif;">
+<div style="text-align:center; margin-bottom:20px; font-weight:bold">
+    Accel
+</div>
+<div style="margin-bottom:50px;">
+    <div id="speed"></div>
+    <div style="text-align:center">Average Speed</div>
+</div>
+<div>
+    <div id="distance"></div>
+    <div style="text-align:center">Current Distance</div>
+</div>
+<div>
+    <script>
+  var channel = "speed";
+  eon.chart({
+    channel: channel,
+    generate: {
+      bindto: '#speed',
+      data: {
+        type: 'gauge',
+      },
+      gauge: {
+        min: 0,
+        max: 10
+      },
+      color: {
+        pattern: ['#FF0000', '#F6C600', '#60B044'],
+        threshold: {
+          values: [1, 4, 10]
+        }
+      }
+    }
+  });
+
+  eon.chart({
+    channel: 'distance',
+    generate: {
+      bindto: '#distance',
+      data: {
+        type: 'gauge',
+      },
+      gauge: {
+        min: 0,
+        max: 10
+      },
+      color: {
+        pattern: ['#FF0000', '#F6C600', '#60B044'],
+        threshold: {
+          values: [1, 4, 10]
+        }
+      }
+    }
+  });
+
+
+  var pubnub = PUBNUB.init({
+    publish_key: 'demo',
+    subscribe_key: 'demo'
+  });
+
+    </script>
+</div>
+</body>
+</html>
