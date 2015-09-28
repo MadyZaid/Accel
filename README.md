@@ -28,7 +28,7 @@ In Demo mode, the accelerometer data is ignored and fake speed values are increm
 
 After installing the app, you can also see the data on a web page by visiting:
 
-http://johannblake.github.io/Accel/index.html
+http://niketestapp.github.io/Accel/index.html
 
 The gauge also displays a small connection icon. When it is red, it means that no data is being uploaded to PubNub. This could be because the device's wifi is turned off, or possibly because PubNub's servers are not available. When data is successfully sent, the icon will be green.
 
